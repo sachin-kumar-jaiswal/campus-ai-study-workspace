@@ -2,6 +2,12 @@
 
 > "A quieter place for focused study."
 
+## Live app
+
+**Open CampusAI:** [https://campus-ai-6hs8.onrender.com](https://campus-ai-6hs8.onrender.com)
+
+The Render service hosts both the frontend and backend API. Its free plan may take a little while to wake after inactivity.
+
 CampusAI is a full-stack study workspace for organizing course documents, asking AI about your material, practicing with saved quizzes, and keeping a personal study plan.
 
 ---
