@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: campus-ai
+    runtime: node
+    plan: free
+    buildCommand: npm ci --prefix server && npm ci --prefix client && npm run build --prefix server && npm run build --prefix client
+    startCommand: npm start --prefix server
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 22.14.0
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: MONGODB_URI
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false
+      - key: EMAIL_FROM
+        sync: false
